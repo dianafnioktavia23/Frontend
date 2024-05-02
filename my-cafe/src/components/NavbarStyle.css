@@ -1,0 +1,40 @@
+/* styles.css */
+
+.navbar-custom {
+    background-image: url('./background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(70, 12, 12, 0.5);
+    height: 400px;
+    
+  }
+  
+  .navbar-brand {
+    color: white !important; /* Mengubah warna teks menjadi putih */
+    margin-left: auto !important; /* Meletakkan teks di sebelah kanan */
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    color: white !important; /* Mengubah warna teks menjadi putih */
+    display: flex;
+    align-items: flex-start; /* Posisi vertikal ke atas */
+    justify-content: flex-end;
+  }
+
+  .navbar {
+    height: 300px; /* Ubah sesuai dengan kebutuhan */
+    padding: 15px 30px; /* Ubah sesuai dengan kebutuhan */
+    display: flex;
+    align-items: flex-start; /* Posisi vertikal ke atas */
+    justify-content: flex-end; 
+  }
+
+  .nav {
+    display: flex;
+    align-items: flex-start; /* Posisi vertikal ke atas */
+    justify-content: flex-end;
+    padding-right:50px 
+  }
+  
