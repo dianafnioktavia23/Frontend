@@ -1,12 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-import NavbarComponent from './components/NavbarComponent';
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
+import Menu from './components/Menu';
+import Contact from './components/Contact';
+
 
 function App() {
   return (
-    <div className="App">
-      <NavbarComponent/>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/call" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 

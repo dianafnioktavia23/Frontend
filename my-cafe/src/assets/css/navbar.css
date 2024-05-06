@@ -1,0 +1,36 @@
+/* CSS umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Media query untuk tampilan tablet */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%; /* Mengubah lebar kontainer untuk tampilan tablet */
+    }
+  
+    /* Contoh: mengubah lebar gambar untuk tampilan tablet */
+    img {
+      width: 100%;
+    }
+  }
+  
+  /* Media query untuk tampilan smartphone */
+  @media (max-width: 480px) {
+    .container {
+      width: 100%; /* Mengubah lebar kontainer untuk tampilan smartphone */
+    }
+  
+    /* Contoh: mengubah ukuran font untuk tampilan smartphone */
+    h1 {
+      font-size: 24px;
+    }
+  }
+  
