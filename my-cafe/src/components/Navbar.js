@@ -41,12 +41,19 @@ const Navbar =()=>{
                         {/* menu list */}
                         <div className='menu-area'>
                             <div className='menu'>
-                                <ul className={`lab-ul ${menuToggle ? "active" : ""}`}>
+                                <ul className={`lab-ul ${menuToggle ? "active" : ""}`} style={{ color: 'white' }}>      
                                     <li><Link to = "/">Home</Link></li>
                                     <li><Link to = "/about">tentang</Link></li>
                                     <li><Link to = "/menu">menu</Link></li>
                                     <li><Link to = "/call">Hubungi Kami</Link></li>
                                 </ul>
+
+                                <div onClick={()=> setMenuToggle(!menuToggle)} className={`header-bar d-lg-none ${menuToggle ? "active" : ""}`}>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
                             </div>
                         </div>
                     </div>

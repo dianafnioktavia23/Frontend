@@ -6,11 +6,12 @@ import Home from './components/Home';
 import About from './components/About';
 import Menu from './components/Menu';
 import Contact from './components/Contact';
-
+import Header from './components/Header';
 
 function App() {
   return (
     <Router>
+     
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -18,6 +19,7 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/call" element={<Contact />} />
       </Routes>
+      <Header />
     </Router>
   );
 }
